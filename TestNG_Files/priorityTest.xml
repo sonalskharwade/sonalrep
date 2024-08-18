@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+<suite name="Smoke Test Suite">
+
+
+    <test name="Running Priority Test Cases">
+        <classes>
+            <class name="newScripts.TestScenario_004"/>
+        </classes>
+    </test>
+
+
+</suite>
