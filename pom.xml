@@ -47,7 +47,7 @@
             <configuration>
                 <suiteXmlFiles>
                     <suiteXmlFile>
-                           TestNG_File/SauceLab.xml
+                           TestNG_Files/SauceLab.xml
                     </suiteXmlFile>
                 </suiteXmlFiles>
             </configuration>
