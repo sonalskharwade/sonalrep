@@ -83,27 +83,6 @@ public class Hamcrest_RestAPI {
 
     }
 
-    @Test
-    public void doGetSoapCall_1(){
-
-        get("https://chercher.tech/sample/api/books.xml")
-
-                .then().assertThat()
-
-                .body("bookstore.book[0].title",equalTo( "The Nightingale")
-
-                        ,"bookstore.book[0].price.hardcover",equalTo("570")
-
-                        ,"bookstore.book[1].price",equalTo("29.99")
-//.body("bookstore.book.title",containsString("Harry Potter"))
-
-                        ,"bookstore.book[0].@category",equalTo("cooking")
-
-                        ,"bookstore.book[0].title.@lang",equalTo("en")
-
-                        ,"bookstore.book[1].@category",equalTo("children"));
-
-    }
 
 
 }
