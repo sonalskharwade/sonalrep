@@ -2,7 +2,7 @@
 <suite name="Hamcrest_RestAPI">
     <test name="Hamcrest_RestAPI">
         <classes>
-            <class name="API_automation.Reqres_Getcall"/>
+            <class name="API_automation.Hamcrest_RestAPI"/>
         </classes>
     </test>
 </suite>
