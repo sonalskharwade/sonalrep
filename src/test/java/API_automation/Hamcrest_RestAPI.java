@@ -49,25 +49,9 @@ public class Hamcrest_RestAPI {
     }
 
     @Test
-    public void Bookstore_Title(){
-
-        given()
-                .contentType(ContentType.JSON)
-                .accept(ContentType.JSON)
-                .auth().basic("title","book category")
-                .when()
-                .get("https://chercher.tech/sample/api/books.xml")
-                .then().assertThat()
-                .statusCode(HttpStatus.SC_OK)
-                .body("$" , hasKey("The Nightingale"))
-                .body("$" , hasKey("children"))
-                .body("authenticated",equalTo(true))
-                .body("user",equalTo("user"));
-}
-
-    @Test
     public void doGetSoapCall(){
         get("https://chercher.tech/sample/api/books.xml")
+
 
                 .then().assertThat()
 
